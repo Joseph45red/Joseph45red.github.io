@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Hot Beans</title>
+    <link rel="icon" href="modern-images/banner.png" />
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Hot Beans <span>.</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="job.html">Job Application</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <style>
+      /* ===== Google Font Import - Poppins ===== */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+      /* Custom CSS  */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+      }
+      header {
+        width: 100%;
+        height: 10vh;
+        background-color: #212529;
+      }
+      nav {
+        padding: 2% 5%;
+        display: flex;
+      }
+      nav h1 {
+        color: white;
+        font-size: 39px;
+        cursor: pointer;
+      }
+      nav h1 span {
+        color: #ff7657;
+      }
+      nav ul {
+        text-align: right;
+        flex: 1;
+      }
+      nav ul li {
+        display: inline-block;
+        padding: 20px 15px;
+      }
+      nav ul li a {
+        color: white;
+        font-size: 16px;
+      }
+      nav ul li a:hover {
+        color: #ff7657;
+      }
+      nav ul li a::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #ff7657;
+        transition: 0.5s;
+        display: block;
+      }
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+      .contact {
+        padding: 2rem;
+        background-color: #f9f9f9;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 600px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: #333;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      button {
+        padding: 0.75rem 2rem;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 4px;
+        font-weight: bold;
+        background: linear-gradient(110deg, #ff7657 40%, #010718d3 60%);
+        color: white;
+        border: none;
+      }
+    </style>
+  </body>
+</html>

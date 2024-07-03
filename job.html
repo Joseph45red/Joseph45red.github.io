@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Website Using HTML and CSS</title>
+    <link rel="icon" href="modern-images/banner.png" />
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Hot Beans <span>.</span></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="job.html">Job Application</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="head-flex">
+        <div class="head">
+          <h1>
+            Hot Beans is a web developers company.
+          </h1>
+          <p>
+            Hot Beans Web is a training to create a new section for the company’s web site which promotes the company to prospective employees, as they need to recruit more web developers.
+          </p>
+          <button>Browse Now</button>
+        </div>
+
+        <div class="image">
+          <img src="https://t3.ftcdn.net/jpg/01/04/39/82/360_F_104398290_xttJqNyRlPeseWRn2lrweWybkwU3VEoJ.jpg" alt="img" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="job-application">
+        <h2>Job Application</h2>
+        <form action="submit-job-application.php" method="post">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required />
+          </div>
+          <div class="form-group">
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
+          </div>
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </main>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+      }
+      nav h1 {
+        color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .head-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+      }
+      .head h1 {
+        font-size: 2rem;
+      }
+      .head p {
+        margin: 1rem 0;
+      }
+      .job-application {
+        padding: 2rem;
+        background-color: #f9f9f9;
+      }
+      .job-application h2 {
+        margin-bottom: 1rem;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 0.75rem 1.5rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </body>
+</html>
